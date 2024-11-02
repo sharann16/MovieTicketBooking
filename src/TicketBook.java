@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TicketBook {
-    public   void ticketBooking(Long pno, List li, HashMap ticket){
+    public   void ticketBooking(Long pno, List li, HashMap ticket,int screen){
         System.out.println(li.toString());
         Snacks snac=new Snacks();
         Scanner sc=new Scanner(System.in);
@@ -52,7 +52,7 @@ public class TicketBook {
                     i--;
                 }
             }
-            ticket.put(pno, Arrays.toString(userseat));//adding the user phone number and seat numbers into map
+            ticket.put(pno, Arrays.toString(userseat)+"Screen"+screen);//adding the user phone number and seat numbers into map
             System.out.println("do you want snacks y/n");
             String opt=sc.nextLine();
             if(opt.equals("y")){
