@@ -54,7 +54,6 @@ public class TicketBook {
                 }
             }
             ticket.put(pno, Arrays.toString(userseat)+"Screen"+screen);//adding the user phone number and seat numbers into map
-            System.out.println(ticket);
             System.out.println("do you want snacks y/n");
             String opt=sc.nextLine();
             if(opt.equals("y")){
