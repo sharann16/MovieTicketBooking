@@ -38,13 +38,14 @@ public class TicketBook {
             //getting seat numbers and set the sest as reserves
             for(int i=0;i<num;i++){
                 seat= sc.nextLine();
+                userseat[i]=seat;
+
                 try {
                     if(!li.contains(seat)){
                         System.out.println("inivalid seat number or the seat is already taken");
                         i--;
                     }
                     else {
-                        userseat[i]=seat;
                         li.set(li.indexOf(seat),"o");
                     }
                 }catch (Exception e){
@@ -53,6 +54,7 @@ public class TicketBook {
                 }
             }
             ticket.put(pno, Arrays.toString(userseat)+"Screen"+screen);//adding the user phone number and seat numbers into map
+            System.out.println(ticket);
             System.out.println("do you want snacks y/n");
             String opt=sc.nextLine();
             if(opt.equals("y")){

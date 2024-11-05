@@ -10,7 +10,7 @@ public  class Tickets {
                         "d1", "d2", "d3", "d4", "d5", "d6", "d7", "d8", "d9", "d10", "d11", "d12", "d13", "d14", "d15", "d16", "d17", "d18", "d19", "d20\n",
                         "e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "e13", "e14", "e15", "e16", "e17", "e18", "e19", "e20\n"}
         };
-        List<Object> Amaran=new LinkedList<>();
+        LinkedList<Object> Amaran=new LinkedList<>();
 
         for(String[] i:tick1){
             for(String j:i){
@@ -28,7 +28,7 @@ public  class Tickets {
                         "d1", "d2", "d3", "d4", "d5", "d6", "d7", "d8", "d9", "d10", "d11", "d12", "d13", "d14", "d15", "d16", "d17", "d18", "d19", "d20\n",
                         "e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "e13", "e14", "e15", "e16", "e17", "e18", "e19", "e20\n"}
         };
-        List<Object> begger=new LinkedList<>();
+        LinkedList<Object> begger=new LinkedList<>();
 
         for(String[] i:tick2){
             for(String j:i){

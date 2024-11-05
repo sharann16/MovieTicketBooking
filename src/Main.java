@@ -2,8 +2,12 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        HashMap<Long,String> ticket=new HashMap<>();//storing individual persions tickets
+        HashMap<Long,String> ticket=new HashMap<>();//storing individual persons tickets
         Scanner sc=new Scanner(System.in);
+
+        Tickets tic=new Tickets();
+        List amar=tic.Amaran();
+        List bro=tic.Begger();
 //        Tickets ob=new Tickets();
 //        LinkedList li=ob.ticket();//It contains the ticket
         UserInput inp= new UserInput();
@@ -14,7 +18,7 @@ public class Main {
             int opy=sc.nextInt();
             switch (opy){
                 case 1:
-                    inp.userinp(ticket);
+                    inp.userinp(ticket,amar,bro);
                     System.out.println("Your ticket is sucessfully reserved");
                     System.out.println("Thank you!");
                     System.out.println("*******************************");
